@@ -1,0 +1,26 @@
+[
+    {
+        "nombre": "Shakira",
+        "pais": "Colombia",
+        "cargo": "Cantante de pop",
+        "empresa": "KissFM",
+        "imagen": "Shakira.jpg",
+        "testimonio": "Me encanta la fruta fresca! En mi canción \"que me quedes tú\" hablo de un kiwi. Estoy loca por las uvas, loca loca loca, me las como por docenas, con ansia, hasta que no me caben más en la boca, como en las campanadas de nochevieja."
+    },
+    {
+        "nombre": "Brad Pitt",
+        "pais": "USA",
+        "cargo": "Actor de cine",
+        "empresa": "Metro Goldwing Mayer",
+        "imagen": "BradPitt.jpg",
+        "testimonio": "A mí la fruta me gusta grande, tipo melones y sandías. En verano mejor que en invierno. Además soy muy quisquilloso con la madurez. Si al morder un melón está duro, pues no lo quiero. Sé que soy muy exigente con la fruta y a veces es un poco difícil de entender."
+    },
+    {
+        "nombre": "Jeniffer López",
+        "pais": "Cuba",
+        "cargo": "Vendedora de menaje para el hogar",
+        "empresa": "Carrefour",
+        "imagen": "JenifferLopez.jpg",
+        "testimonio": "Con la fruta soy insaciable. Bananas, ciruelas, mangos... nunca cierro la puerta a frutas exóticas como maracuyas o frutas de la pasión. A veces, en vez de comerla de postre, me como medio kilo de ciruelas como plato principal y de postre me pido una milanesa de pollo."
+    }
+]
