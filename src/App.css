@@ -8,11 +8,20 @@ html,
 body{
   font-size: 18px;
   background-color: #e3f8e0;
+  display: block;
 }
 
+header{
+  display: flex;
+  flex: auto;
+  min-width: 1600px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
 .App {
   min-height: 100vh;
-  display: flex;
+  /*display: flex;*/
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;

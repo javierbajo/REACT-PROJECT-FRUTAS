@@ -5,7 +5,7 @@ import testimonios from '../../services/testimonios.json'
 
 const htmlTestimonio = testimonios.map((person)=>{
   return(
-  <div className='contenedor-testimonio'>
+  <div className='contenedor-testimonio' > 
     <img 
     className='imagen-testimonio'
     src={require(`../../images/${person.imagen}`)}

@@ -3,7 +3,15 @@ import '../../styles/Contacto.css'
 
 const Contacto = () => {
   return (
-    <div className='contacto-div'>Aquí va el contenido de Contacto</div>
+    <form className='contacto-form'>
+      <label htmlFor="">Nombre</label>
+      <input type="text" /> <br />
+
+      <label htmlFor="">Comentario</label>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+      
+      
+      </form>
   )
 }
 
