@@ -22,7 +22,7 @@ const Frutas = () => {
     })
     .catch(error => {console.log(error)});
 */
-  },[fruits]);
+  },[]);
 
   return (
     <div className='frutas-div'>

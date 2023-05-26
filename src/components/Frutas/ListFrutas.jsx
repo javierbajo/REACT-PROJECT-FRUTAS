@@ -3,8 +3,8 @@ import '../../styles/ListFrutas.css'
 import { Link } from 'react-router-dom';
 
 const renderFruits = (fruits) =>{
-    return fruits.map((fruit) => (
-        <Link to={`./${fruit.fruitName}`}style={{textDecoration: 'none'}}>
+    return fruits.map((fruit,i) => (
+        <Link to={`./${fruit.fruitName}`}style={{textDecoration: 'none'}} key={i}>
       <li key={fruit.id} className="fruitCard">
         <div className="fruitCard-imageContainer">
           <img

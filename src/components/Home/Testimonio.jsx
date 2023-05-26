@@ -3,9 +3,9 @@ import React from 'react'
 import '../../styles/Testimonio.css'
 import testimonios from '../../services/testimonios.json'
 
-const htmlTestimonio = testimonios.map((person)=>{
+const htmlTestimonio = testimonios.map((person, i)=>{
   return(
-  <div className='contenedor-testimonio' > 
+  <div className='contenedor-testimonio' key={i}> 
     <img 
     className='imagen-testimonio'
     src={require(`../../images/${person.imagen}`)}
