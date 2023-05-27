@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom'
 import "../../styles/NavBar.css"
 
-const NavBar = () => {
+const NavBar = ({user}) => {
   return (
     
       <nav className="nav">
@@ -18,6 +18,11 @@ const NavBar = () => {
           <li>
             <Link to="/contact" className="lis">Contacto</Link>
           </li>
+          {user ?
+          <li>
+            <Link to="/profile" className="lis">Perfil</Link>
+          </li> :''
+          }
         </ul>
       </nav>
     

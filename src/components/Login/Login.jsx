@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import '../../styles/Login.css'
 
 const intialState = {
     email:"",
@@ -24,6 +25,7 @@ const Login = ({ loginUser, loginError }) => {
       console.log("Se han enviado los datos");
       loginUser(formData)
       setFormData(intialState);
+      
     };
     console.log(formData)
     
@@ -60,9 +62,9 @@ const Login = ({ loginUser, loginError }) => {
         </div>
       </div>
 
-      {loginError ? <div>{loginError} </div>: null}
+      {loginError ? <div className='loginError'>{loginError} </div>: null}
     </form>
-  );
+  ); 
 };
 
 export default Login;
