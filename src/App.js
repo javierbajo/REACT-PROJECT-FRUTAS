@@ -65,7 +65,7 @@ const loginUser = (formData) => {
         </div>
         <NavBar user={user}/>
         </header>
-        <div className='notaLogeado'>Usuario: {user.userName} {user.userLastname}</div>
+       {/* <div className='notaLogeado'>Usuario: {user.userName} {user.userLastname}</div> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login loginUser={loginUser} loginError={loginError} />} />
