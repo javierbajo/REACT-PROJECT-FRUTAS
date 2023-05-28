@@ -1,11 +1,13 @@
 import React from 'react'
 import Testimonio from "./Testimonio";
+import '../../styles/Home.css';
 
 const Home = () => {
   return (
-    <>
-    <Testimonio/>
-    </>
+
+    <div className='home-contenedor'>
+      <Testimonio/>
+    </div>
  
   )
 }

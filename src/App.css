@@ -8,7 +8,8 @@ html,
 body{
   font-size: 18px;
   background-color: #e3f8e0;
-  display: block;
+  /* display:flex; */
+
 }
 
 header{
@@ -21,13 +22,13 @@ header{
 }
 .App {
   min-height: 100vh;
-  /*display: flex;*/
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding-top: 15px;
-}
+} 
 
 .contenedor-principal{
   min-height: 600px;
@@ -36,7 +37,7 @@ header{
   align-items: center;
   justify-content: center;
 
-}
+} 
 
 h1{
   max-width: 940px;
