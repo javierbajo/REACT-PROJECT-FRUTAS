@@ -28,7 +28,7 @@ function App() {
   useEffect(() => {
     getDataUsersAPI();
   }, []);
-  console.log(userList);
+  //console.log(userList);
   //-----------------------------------
   // primer estado del user es null, aún no está definido
   const [user, setUser] = useState(null);

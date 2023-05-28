@@ -1,4 +1,4 @@
-import React from 'react'
+import {useEffect} from 'react'
 
 const Logout = ({setUser}) => {
 
@@ -7,7 +7,10 @@ const Logout = ({setUser}) => {
         setUser(null);
     }
 
-    handleLogout()
+    useEffect(() => {
+      handleLogout()
+    }, []);
+
   return (
     <h1>Hasta la vista baby</h1>
   )
