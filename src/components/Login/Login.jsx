@@ -9,62 +9,73 @@ const intialState = {
 
 const Login = ({ loginUser, loginError }) => {
 
-    const[formData, setFormData] = useState(intialState);
+  const [formData, setFormData] = useState(intialState);
 
-    const changeInput = (event) =>{
-      //OTRA FORMA DE PONER LO MISMO
-     /* const nombreInput = event.target.name; 
+  const changeInput = (event) => {
+    //OTRA FORMA DE PONER LO MISMO
+    /* const nombreInput = event.target.name; 
         const valorInput = event.target.value;
         setFormData({...formdata, [nombreInput]: valorInput});*/
-        const {value, name} = event.target;
-        setFormData({...formData, [name]: value});
-        console.log(name, value)
-    };
-    const submitForm = (event) => {
-      event.preventDefault();
-      console.log("Se han enviado los datos");
-      loginUser(formData)
-      setFormData(intialState);
-      
-    };
-    console.log(formData)
-    
+    const { value, name } = event.target;
+    setFormData({ ...formData, [name]: value });
+    //console.log(name, value)
+  };
 
-
+  const submitForm = (event) => {
+    event.preventDefault();
+    console.log("Se han enviado los datos");
+    loginUser(formData);
+    setFormData(intialState);
+  };
+  //console.log(formData)
 
   return (
-    <form className="form-login" onSubmit={submitForm}>
-      <div className="div-login">
-        <label htmlFor="email">Email</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          onChange={changeInput}
-          value={formData.email}
-        />
+    <div className="login-contenedor">
+      <div className="login-contenedor-centrado">
+        <div className="login-div-izquierdo">
+          <form className="login-form" onSubmit={submitForm}>
+            <label htmlFor="email">Email</label>
+            <input
+              className="login-input-email"
+              type="email"
+              name="email"
+              placeholder="email"
+              id="email"
+              onChange={changeInput}
+              value={formData.email}
+            />
 
-        <label htmlFor="password">Contraseña</label>
-        <input
-          type="password"
-          name="password"
-          id="password"
-          onChange={changeInput}
-          value={formData.password}
-        />
+            <label htmlFor="password">Contraseña</label>
+            <input
+              className="login-input-password"
+              type="password"
+              name="password"
+              placeholder="password"
+              id="password"
+              onChange={changeInput}
+              value={formData.password}
+            />
 
-        <div>
-          <button type="submit">Login</button>
-          <Link to="/register">
-            <button>Registro</button>
-          </Link>
-          <button>Logout</button>
+            <button type="submit" className="login-button">
+              Login
+            </button>
+          </form>
+        </div>
+
+        <div className="login-div-derecho">
+          <div className="login-div-titulo">Bienvenido</div>
+          <hr />
+          <div >
+            <Link to="/register" className="login-registro">¿No tienes cuenta? Regístrate</Link>
+            {loginError ? <div className="loginError">{loginError} </div> : null}
+            <hr />
+            <Link to="/" className="login-registro">Volver a home</Link>
+          </div>
         </div>
       </div>
-
-      {loginError ? <div className='loginError'>{loginError} </div>: null}
-    </form>
-  ); 
+      
+    </div>
+  );
 };
 
 export default Login;
