@@ -17,19 +17,14 @@ const Registro = () => {
     const response = await fetch("http://localhost:3001/users/");
     const res = await response.json();
     */
-    const response = await fetch("http://localhost:3001/users", {
+    const response = await fetch("https://api-frutas.vercel.app/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        email: formData.email,
-        password: formData.password,
-        userName: formData.userName,
-        userLastname: formData.userLastname,
-        adress: formData.adress,
-        fruits: [],
-      }),
+      body: JSON.stringify(
+        formData
+      ),
     });
     const res = await response.json();
     console.log(res);
